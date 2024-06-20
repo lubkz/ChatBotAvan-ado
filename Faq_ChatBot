@@ -22,8 +22,8 @@ faq = {
     # Rio de Janeiro - São Gonçalo - Localização
     ("sede no rio de janeiro",
      "sede do rio de janeiro",
-     "sede rio de janeiro",
-     "rio de janeiro sede"): "A sede do Rio de Janeiro fica na rua De Leonardo Pravo, N* 1500, Nerlin, São Gonçalo.",
+     "sede da empresa no rio de janeiro",
+     "rio de janeiro sede"): "A sede do Rio de Janeiro fica na cidade de São Gonçalo, Rua De Leonardo Pravo, N* 1500, Nerlin, São Gonçalo.",
 
     # Rio de Janeiro - São Gonçalo - Horários
     ("horario da sede no rio de janeiro",
@@ -42,15 +42,10 @@ faq = {
      "até que horas em fortaleza"): "O horário de funcionamento da sede em fortaleza é das 9:00 até as 19:00 horas.",
 
     # Ceará - Fortaleza - Local
-    ("rua da sede em fortaleza",
-     "a sede em fortaleza",
-     "local da da sede em fortaleza",
-     "localidade da sede em fortaleza",
-     "endereço da sede em fortaleza",
-     "rua da sede de fortaleza",
-     "local da da sede de fortaleza",
-     "localidade da sede de fortaleza",
-     "endereço da sede de fortaleza"): "A sede na cidade de Fortaleza fica na Rua Leopodina da Assunção, N* 472, Aldeota, Fortaleza.",
+    ("sede no ceara",
+     "sede do ceara",
+     "sede da empresa no ceara",
+     "ceara sede"): "A sede do Ceará fica na cidade de Fortaleza, Rua Leopodina da Assunção, N* 472, Aldeota, Fortaleza.",
 }
 
 # Função para retirar os acentos e substituir por caracteres sem acento
