@@ -1,3 +1,6 @@
+#Esta é a lógica por trás do funcionamento geral do ChatBot. Ela não reflete no projeto atual como algo atuante, é apenas uma
+#base de seu funcionamento, mas não interfere no projeto principal "CHAtBOTTEST".
+
 #Biblioteca crucial para o funcionamento do código - Favor baixar no terminal com "pip install fuzzywuzzy"
 from fuzzywuzzy import fuzz
 
