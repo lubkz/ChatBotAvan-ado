@@ -1,0 +1,106 @@
+/* CONTEINER PRINCIPAL DA PAGINA */
+.conteiner-principal{
+    max-width: 900px; /* Largura máxima do contêiner */
+    margin: 0 auto; /* Centraliza o contêiner na tela */
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box;
+
+}
+
+/* BARRA DE NAVEGAÇÃO */
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: #404031;
+    display: flex;
+    justify-content: space-between; /* Espaçamento entre itens */
+    align-items: center; /* Alinhamento vertical dos itens */
+    padding: 0 20px; /* Preenchimento lateral */
+    box-sizing: border-box;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 100px;
+    display: block;
+}
+
+/* CHAT BOT COISAS */
+
+.chat-bot-conteiner{
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    display: none; /* Inicialmente escondido */
+    flex-direction: column;
+}
+
+.chatbot-header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.chat-bot-input{
+    display: flex;
+    padding: 10px 100px;
+    border-top: 1px solid #ccc;
+}
+
+.chatbot-input button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.chat-bot-response{
+    flex: 10;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* CHAT BOT COISAS */
+/* Modificador da classe referida - texto padrão */
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Modificador da classe referida - texto destacado */
+p.destaque {
+    font-weight: bold;
+    color: blue;
+}
+
+
+/* Modificador da classe referida - imagem */
+img.bannerup {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 20px auto 0;
+
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'myapp/css/Stiulus.css' %}">
+</head>
+<body>
+    <h1>Exemplo de CSS</h1>
+    <p class="destaque">Este parágrafo está em destaque.</p>
+    <p>Este parágrafo não está em destaque.</p>
+
+    <form method="post" id="chatbotForm">
+        {% csrf_token %}
+        <input type="text" name="message" id="messageInput" placeholder="Digite sua pergunta">
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="chatbotResponse"></div>  <!-- Adicione esta linha -->
+
+    <script>
+        document.getElementById('chatbotForm').onsubmit = function(e) {
+            e.preventDefault();
+            var messageInput = document.getElementById('messageInput');
+            var chatbotResponse = document.getElementById('chatbotResponse');
+
+            fetch('/chatbot/', {
+                method: 'POST',
+                body: new FormData(this)
+            })
+            .then(response => response.json())
+            .then(data => {
+                chatbotResponse.innerText = data.resposta;  // Exibe a resposta aqui
+            });
+            messageInput.value = ''; // Limpar o campo de mensagem após o envio
+        };
+
+    </script>
+</body>
+</html>
